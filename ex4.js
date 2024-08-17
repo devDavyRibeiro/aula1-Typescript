@@ -5,10 +5,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const prompt_sync_1 = __importDefault(require("prompt-sync"));
 var prompt = (0, prompt_sync_1.default)();
-const numero = prompt("Escreva um número: ");
-let primeiro = Number(numero) - 2;
-let segundo = Number(numero) - 1;
-let terceiro = Number(numero) + 1;
-let quarto = Number(numero) + 2;
-console.log(`Antecessores: ${primeiro} e ${segundo}, ${numero}.
-    Sucessores: ${terceiro}, ${quarto}`);
+const numero = Number(prompt("Digite um número: "));
+if (numero % 2 === 0) { // três iguais
+    console.log(`Número ${numero} é par`);
+}
+else {
+    console.log(`Número ${numero} é impar`);
+}
